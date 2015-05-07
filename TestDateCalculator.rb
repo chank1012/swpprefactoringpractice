@@ -33,6 +33,7 @@ class TestDateCalculator < Minitest::Test
   def test_addleapyear
     assert_equal help_addleapyear(255,2008), 2008
     assert_equal help_addleapyear(400,2008), 2009
+    assert_equal help_addleapyear(365,2008), 2008
     assert_equal help_addleapyear(366,2008), 2009
   end
 
@@ -40,6 +41,7 @@ class TestDateCalculator < Minitest::Test
     assert_equal help_addregularyear(255,2009), 2009
     assert_equal help_addregularyear(400,2009), 2010
     assert_equal help_addregularyear(365,2009), 2010
+    assert_equal help_addregularyear(366,2009), 2010
   end
 
   # convert
